@@ -1,0 +1,12 @@
+<div class="container wrapper">
+
+  <h1 class="title"><%= @task.title %></h1>
+  <p><%= link_to 'edit', edit_task_path(@task) %></p>
+  <p><%= check_box_tag(:completed) %><%= @task.details %></p>
+  <p><%= link_to 'delete', task_path(@task), method: :delete %></p>
+</div>
+
+
+
+
+

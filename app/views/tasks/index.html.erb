@@ -1,0 +1,19 @@
+<div class="container wrapper">
+  <h1 class="title">Your List:</h1>
+  <ul class="ul" >
+    <% @tasks.each do |task|  %>
+      <li class="li"><i class="fas fa-arrow-circle-right"></i></i><%= link_to task.title, task_path(task)%></li>
+    <% end %>
+
+  </ul>
+  <div class="flex">
+    <p><%= link_to 'New Task', new_task_path,  class: "btn btn-primary"  %></p>
+  </div>
+</div>
+
+
+
+
+
+
+
